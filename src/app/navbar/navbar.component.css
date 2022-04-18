@@ -1,0 +1,15 @@
+.navbar{
+    background: #C17872;
+}
+
+.mimenu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-fluid{
+}
+
+.navbar a{
+    color: white;
+}
