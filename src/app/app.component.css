@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #C17872;
+
+    width: 100%;
+    height: 40px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.aisha_icon{
+    margin-left: 10%;
+}
+
+.funciones{
+    margin-right: 10%;
+}
+
+.funciones a{
+    margin: 0 20px 0 20px;
+}
+
+.contenido{
+    padding: 0 20rem 0 20rem;
+}
+
+.title{
+    font-size: 53px;
+}
+
+.nota{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+}
+
+.info{
+    margin-left: 10%;
+    width: 100%;
+    font-size: 20px;
+}
+
+.info section{
+    display: flex;
+}
+
+.idSection .sa{
+    margin-top: 0;
+}
+
+.idSection .sb{
+    margin-top: 0;
+}
+
+.sa{
+    width: 50%;
+}
+
+.sb{
+    width: 100%;
+}
+
+.botones{
+    margin-top: 20px;
+}
+
+.botones button{
+    font-size: 18px;
+    height: 56px;
+    width: 200px;
+    
+    border-width: 0px;
+    background: #F7DDDC;
+
+}
+
+.btn_Cancelar{
+    margin-left: 10px;
+}
