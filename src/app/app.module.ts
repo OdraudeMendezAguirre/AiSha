@@ -11,6 +11,8 @@ import { IniciasesComponent } from './iniciases/iniciases.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { NotaComponent } from './nota/nota.component';
 import { TicketComponent } from './ticket/ticket.component';
+import { ProductbarComponent } from './productbar/productbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { TicketComponent } from './ticket/ticket.component';
     IniciasesComponent,
     CarritoComponent,
     NotaComponent,
-    TicketComponent
+    TicketComponent,
+    ProductbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

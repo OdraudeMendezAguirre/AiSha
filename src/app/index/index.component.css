@@ -1,0 +1,13 @@
+.banner-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1526758097130-bab247274f58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-size:cover;
+    justify-content: center;
+    height: 20rem;
+}
+
+.content{
+    margin-left: 15rem;
+    margin-right: 15rem;
+    color: white;
+}
+
