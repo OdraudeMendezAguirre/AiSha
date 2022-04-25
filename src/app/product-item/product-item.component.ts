@@ -8,15 +8,10 @@ import { ProductoService } from '../productos.service';
 })
 
 export class ProductItemComponent implements OnInit {
-  id_producto: number = 0;
-  nombre: String = "";
-  precio: number = 0;
-  descripcion: String = "";
-  almacen: number = 0;
-  imagen: String = "";
   productos=[];
   itemCount: number = 0;
   producto: any =null;
+  
   constructor(private _data: ProductoService) { }
 
   ngOnInit(){

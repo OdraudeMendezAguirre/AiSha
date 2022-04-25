@@ -8,13 +8,7 @@ import { ProductoService } from '../productos.service';
 })
 export class ProductoComponent implements OnInit {
   //itemCount: number;
-  btntxt: string ="Agregar Cancion";
   id_producto: number = 0;
-  nombre: String = "";
-  precio: number = 0;
-  descripcion: String = "";
-  almacen: number = 0;
-  imagen: String = "";
   producto=[];
 
   constructor(private _data: ProductoService) { }

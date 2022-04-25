@@ -7,7 +7,7 @@ import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductoComponent } from './producto/producto.component';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { TicketComponent } from './ticket/ticket.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
 const routes: Routes = [
   {
     path: '',
@@ -40,7 +40,8 @@ const routes: Routes = [
 {
   path: 'test',
   component: ProductItemComponent
-}
+},
+{path:'navbar', component:NavbarComponent}
 ];
 
 @NgModule({
