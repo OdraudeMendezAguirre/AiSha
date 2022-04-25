@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class ="container color-dark">
+   
+    <div class = "col">
+     
+      <p>Agrega una cancion de ghost</p>
+    
+    </div>
+   
+    <div class = "col">
+    
+      <p>Lista de Productos ({{  itemCount }})</p>
+    
+    </div>
+  
+  </div>
+  <div class ="container color-ligth" [@productos]="productos.length ">
+    
+      <div class = "col">
+       
+        <p class="sm">Agrega el nombre y album de una cancion .</p>
+        
+      </div>
+     
+      <div class = "col">
+       <p class="life-container" *ngFor="let product for products; let i = index">
+  
+          {{producto.nombre}}
+        </p>
+      
+      </div>
+    
+    </div>

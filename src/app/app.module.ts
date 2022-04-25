@@ -13,6 +13,10 @@ import { NotaComponent } from './nota/nota.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { ProductbarComponent } from './productbar/productbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductItemComponent } from './product-item/product-item.component';
+import { ProductoService } from './productos.service';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,13 +30,16 @@ import { FooterComponent } from './footer/footer.component';
     NotaComponent,
     TicketComponent,
     ProductbarComponent,
-    FooterComponent
+    FooterComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProductoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
