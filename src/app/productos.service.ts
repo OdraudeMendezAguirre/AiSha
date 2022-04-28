@@ -17,7 +17,7 @@ import { Producto } from './Entidades/Producto';
       this.productos.next(goal)
     }
     
-    consultarTodos = 'http://127.0.0.1:8080/Productos';
+    consultarTodos = 'http://localhost:8080/Productos';
     consultarId = 'http://localhost:8080';
 
     httpOptions = {
