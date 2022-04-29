@@ -11,5 +11,8 @@ export class IndexComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  usuario="";
+  guardarUsuarioIndex(usuario:string){
+    this.usuario=usuario;
+  }
 }

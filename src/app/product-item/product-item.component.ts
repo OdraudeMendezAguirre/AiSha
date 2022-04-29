@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductoComponent } from '../producto/producto.component';
 import { ProductoService } from '../productos.service';
 
 @Component({
@@ -8,24 +9,19 @@ import { ProductoService } from '../productos.service';
 })
 
 export class ProductItemComponent implements OnInit {
-  productos=[];
-  itemCount: number = 0;
-  producto: any =null;
+  productos:any;
   
-  constructor(private _data: ProductoService) { }
+  constructor(public productoService:ProductoService) {}
 
-  ngOnInit(){
-    this.itemCount = this.productos.length;
-    this._data.producto.subscribe(res=> this.productos = res);
-    this._data.changeProducto(this.productos);
-
-    this._data.getProductos()
-     .subscribe((data: any) => {
-      alert(JSON.stringify(data.productos));
-
-      this.productos = data.productos;
-      this.producto= this._data;
-      this._data.changeProducto(this.productos);
-    });
-  } 
+  ngOnInit():void{
+    this.productoService.getProductos().subscribe(resp =>{
+      this.productos=resp;
+    }, error => {console.error(error)}
+    )
+  }
+  
+  setId(id:any){
+    let producto:ProductoComponent=new ProductoComponent(this.productoService);
+    producto.setId(id);
+  }
 }

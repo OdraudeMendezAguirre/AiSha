@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { ProductoService } from '../productos.service';
 
 @Component({
@@ -7,20 +9,19 @@ import { ProductoService } from '../productos.service';
   styleUrls: ['./producto.component.css']
 })
 export class ProductoComponent implements OnInit {
-  //itemCount: number;
-  id_producto: number = 0;
-  producto=[];
+  id_producto = 0;
+  producto:any;
+    constructor(public productoService:ProductoService) {}
 
-  constructor(private _data: ProductoService) { }
-
-  ngOnInit() {
-    this._data.producto.subscribe(res=> this.producto = res);
-
-    this._data.getProductoId(this.id_producto)
-     .subscribe((data: any) => {
-      alert(JSON.stringify(data.productos)); //cambiado 49-51
-      this.producto = data.productos;
-    });
+  setId(id:number){
+    this.id_producto=id;
   }
+  ngOnInit():void{
+    this.productoService.getProductosId(this.id_producto).subscribe(resp =>{
+      this.producto=resp;
+    }, error => {console.error(error)}
+    )
+  }
+
 
 }
