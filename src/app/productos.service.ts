@@ -13,37 +13,16 @@ import { Producto } from './Entidades/Producto';
 
     constructor(private http: HttpClient) { }
     
-    changeProducto(goal: any){
-      this.productos.next(goal)
-    }
-    
-    consultarTodos = 'http://localhost:8080/Productos';
-    consultarId = 'http://localhost:8080';
+    consultarTodos = "http://localhost:8080/Productos";
+    consultarId = "http://localhost:8080/Productos/";
 
-    httpOptions = {
-        headers: new HttpHeaders({
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Headers': 'Content-Type',
-          'Access-Control-Allow-Origin':'*',
-          'Access-Control-Allow-Methods':'GET' 
-        })
-    }
 
-    getProductos(): Observable<Producto> {
-        return this.http.get<Producto>(this.consultarTodos, this.httpOptions)
-        .pipe(
-          retry(1),
-          catchError(this.handleError)
-        )
+    getProductos(): Observable<any> {
+      return this.http.get(this.consultarTodos);
+    }
+    getProductosId(id:number): Observable<any> {
+      return this.http.get(this.consultarId+id);
     } 
-
-    getProductoId(id:number): Observable<Producto>{
-        return this.http.get<Producto>(this.consultarId + '/Productos/' +id , this.httpOptions)
-        .pipe(
-            retry(1),
-            catchError(this.handleError)
-        )
-    }
     
 
     handleError(error: { error: { message: string; }; status: any; message: any; }) {
