@@ -38,7 +38,7 @@ const routes: Routes = [
   component: CarritoComponent
 },
 {
-  path: 'test',
+  path: 'producto',
   component: ProductItemComponent
 },
 {path:'navbar', component:NavbarComponent}
