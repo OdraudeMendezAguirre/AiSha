@@ -11,12 +11,12 @@ import { IniciasesComponent } from './iniciases/iniciases.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { NotaComponent } from './nota/nota.component';
 import { TicketComponent } from './ticket/ticket.component';
-import { ProductbarComponent } from './productbar/productbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductoService } from './productos.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductoscatalogoComponent } from './productoscatalogo/productoscatalogo.component';
 
 @NgModule({
   declarations: [
@@ -29,9 +29,9 @@ import { HttpClientModule } from '@angular/common/http';
     CarritoComponent,
     NotaComponent,
     TicketComponent,
-    ProductbarComponent,
     FooterComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    ProductoscatalogoComponent
   ],
   imports: [
     BrowserModule,
