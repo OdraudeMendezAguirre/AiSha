@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductoscatalogoComponent } from './productoscatalogo/productoscatalogo.component';
 import { CarritoItemComponent } from './carrito-item/carrito-item.component';
+import { VistaProductoComponent } from './vista-producto/vista-producto.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CarritoItemComponent } from './carrito-item/carrito-item.component';
     FooterComponent,
     ProductItemComponent,
     ProductoscatalogoComponent,
-    CarritoItemComponent
+    CarritoItemComponent,
+    VistaProductoComponent
   ],
   imports: [
     BrowserModule,

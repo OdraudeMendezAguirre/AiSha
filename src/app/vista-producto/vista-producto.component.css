@@ -1,0 +1,56 @@
+.container{
+    margin-top: 4rem;
+    padding: 2rem;
+
+}
+
+.contenido{
+    display: flex;
+
+}
+
+.sec-izq img{
+    width: 30rem;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.034);
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    margin-top: 1rem;
+    width: 49%;
+    height: 2rem;
+    border: none;
+    background-color: #F7DDDC;
+}
+
+
+.sec-der{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin-left: 5rem;
+}
+
+h1, h2{
+    font-weight: lighter;   
+}
+
+.disponibles{
+    display: flex;
+}
+
+.disponibles p{
+    margin-right: 2rem;
+}
+
+/** */
+
+button:hover{
+    color: white;
+    background-color: #c7726f;
+}
