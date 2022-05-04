@@ -8,6 +8,7 @@ import { ProductoComponent } from './producto/producto.component';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { VistaProductoComponent } from './vista-producto/vista-producto.component';
 const routes: Routes = [
   {
     path: '',
@@ -40,6 +41,10 @@ const routes: Routes = [
 {
   path: 'producto',
   component: ProductItemComponent
+},
+{
+  path: 'vistaProducto',
+  component: VistaProductoComponent
 },
 {path:'navbar', component:NavbarComponent}
 ];
