@@ -17,6 +17,7 @@ import { ProductoService } from './productos.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductoscatalogoComponent } from './productoscatalogo/productoscatalogo.component';
+import { CarritoItemComponent } from './carrito-item/carrito-item.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProductoscatalogoComponent } from './productoscatalogo/productoscatalog
     TicketComponent,
     FooterComponent,
     ProductItemComponent,
-    ProductoscatalogoComponent
+    ProductoscatalogoComponent,
+    CarritoItemComponent
   ],
   imports: [
     BrowserModule,

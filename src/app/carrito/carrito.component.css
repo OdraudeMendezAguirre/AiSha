@@ -1,0 +1,32 @@
+.container{
+    margin-top: 5rem;
+}
+
+hr{
+    margin-top: 5rem;
+}
+
+.total{
+    margin-top: 5rem;
+    display: flex;
+    align-content: center;
+}
+
+.total h2{
+    margin-right: 5rem;
+}
+
+.total p{
+    font-size: 2rem;
+}
+
+button{
+    background: #F7DDDC;
+    border-width: 0;
+    width: 10rem;
+    padding: 5px;
+}
+
+button:hover{
+    transform: scale(1.02);
+}
