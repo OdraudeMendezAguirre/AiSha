@@ -9,6 +9,7 @@ import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { VistaProductoComponent } from './vista-producto/vista-producto.component';
+import { NotaComponent } from './nota/nota.component';
 const routes: Routes = [
   {
     path: '',
@@ -45,6 +46,10 @@ const routes: Routes = [
 {
   path: 'vistaProducto',
   component: VistaProductoComponent
+},
+{
+  path: 'nota',
+  component: NotaComponent
 },
 {path:'navbar', component:NavbarComponent}
 ];

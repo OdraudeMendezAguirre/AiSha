@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductoscatalogoComponent } from './productoscatalogo/productoscatalogo.component';
 import { CarritoItemComponent } from './carrito-item/carrito-item.component';
 import { VistaProductoComponent } from './vista-producto/vista-producto.component';
+import { ItemTicketComponent } from './item-ticket/item-ticket.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { VistaProductoComponent } from './vista-producto/vista-producto.componen
     ProductItemComponent,
     ProductoscatalogoComponent,
     CarritoItemComponent,
-    VistaProductoComponent
+    VistaProductoComponent,
+    ItemTicketComponent
   ],
   imports: [
     BrowserModule,
