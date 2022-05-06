@@ -1,0 +1,12 @@
+.contenido{
+    display: flex;
+}
+
+.precio{
+    margin-left: 4rem;
+}
+
+p{
+    font-size: 14px;
+    margin-bottom: 0;
+}

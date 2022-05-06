@@ -30,3 +30,40 @@ button{
 button:hover{
     transform: scale(1.02);
 }
+
+.btn-1{
+    padding: 0px;
+    width: 10rem;
+    height: 2rem;
+    background-color: #e46965;
+    color: white;
+    border: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.btn-1 a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hbtn{
+    color: white;
+}
+
+.hbtn a:hover{
+    color: #660f0c;
+    background: white;
+}
+
+.hbtn:hover{
+    color: #660f0c;
+    background: white;
+}
