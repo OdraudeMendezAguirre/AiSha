@@ -1,0 +1,64 @@
+
+.producto{
+    margin-top: 2rem;
+    display: flex;
+
+    background-color: #fff;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(225, 224, 224);
+    border-radius: 10px;
+
+    box-shadow: 0px 5px 10px 1px rgba(134, 134, 134, 0.099);
+
+    padding: 2rem;
+}
+.hbtn{
+    color: white;
+}
+
+img{
+    width: 15rem;
+}
+
+.info{
+    margin-left: 10rem;
+}
+
+.datos{
+    display: flex;
+}
+
+.title-info{
+    font-weight: bold;
+    width: 12rem;
+}
+
+button{
+    background: #F7DDDC;
+    border-width: 0;
+    width: 10rem;
+    padding: 5px;
+}
+
+.botones{
+    margin-top: 2rem;
+}
+
+.btn1{
+    margin-right: 10px;
+}
+
+.btn2{
+    background: red;
+    color: white;
+}
+
+
+button:hover{
+    transform: scale(1.02);
+}
+
+.producto:hover{
+    border-color: #898989;
+}

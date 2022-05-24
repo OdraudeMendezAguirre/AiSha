@@ -1,0 +1,81 @@
+.container{
+    margin-top: 4rem;
+    padding: 2rem;
+
+}
+
+.contenido{
+    display: flex;
+
+}
+
+.sec-izq img{
+    width: 30rem;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.034);
+}
+
+.botones{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-1, .btn-2{
+    padding: 0px;
+    width: 48%;
+    height: 2rem;
+    background-color: #e46965;
+    color: white;
+    border: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.btn-1 a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hbtn{
+    color: white;
+}
+
+.sec-der{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin-left: 5rem;
+}
+
+h1, h2{
+    font-weight: lighter;   
+}
+
+.disponibles{
+    display: flex;
+}
+
+.disponibles p{
+    margin-right: 2rem;
+}
+
+/** */
+
+
+.hbtn a:hover{
+    color: #660f0c;
+    background: white;
+}
+
+.hbtn:hover{
+    color: #660f0c;
+    background: white;
+}

@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <h1 style="margin-top: 5rem;">Tu Nota</h1>
+    <div class="producto">
+        <div class="img">
+            <img src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/237116255_169718545251196_3438560399951417157_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=kgAyOHcx_dkAX9lnZHH&_nc_ht=scontent.fjal3-1.fna&oh=00_AT8b-LckXegHHZYHa4-YpLwoA4gErGK7Da6vdyo1NM9ENA&oe=628C3965" alt="...">
+        </div>
+        <div class="info">
+            <div class="datos">
+                <p class="title-info">Producto</p>
+                <p>{{producto.nombre}}</p>
+            </div>
+            <div class="datos">
+                <p class="title-info">Precio Unitario</p>
+                <p>${{producto.precio}}</p>
+            </div>
+            <div class="datos">
+                <p class="title-info">Precio Total</p>
+                <p>${{producto.precio}}</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="total">
+        <h2>Precio Total</h2>
+        <p>${{producto.precio}}</p>
+    </div>
+    <button (click)="compra()"><a href="" class="hbtn">Confirmar Compra</a></button>
+</div>
+<app-footer></app-footer>

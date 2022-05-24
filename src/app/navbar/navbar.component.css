@@ -1,0 +1,12 @@
+.navbar{
+    background: #f59790;
+}
+
+.mimenu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a{
+    color: white;
+}
