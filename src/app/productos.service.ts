@@ -1,27 +1,32 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/';
 import { Observable, throwError } from 'rxjs';
-import { retry, catchError } from 'rxjs/operators';
-import { Producto } from './Entidades/Producto';
+
 @Injectable({
     providedIn: 'root'
   })
   export class ProductoService{
     private productos = new BehaviorSubject<any>(['id_producto', 'n_prod', 'p_prod', 'd_prod', 'almcn_prod', 'img_prod']);
     producto=  this.productos.asObservable();
+    id:number=0;
 
     constructor(private http: HttpClient) { }
     
-    consultarTodos = "http://localhost:8080/Productos";
-    consultarId = "http://localhost:8080/Productos/";
+    consultar = "http://localhost:8085/Productos";
+    cid= "http://localhost:8085/Productos/";
+
+    setId(id:number){
+      this.cid=this.cid+id;
+    }
 
 
     getProductos(): Observable<any> {
-      return this.http.get(this.consultarTodos);
+      return this.http.get(this.consultar);
     }
-    getProductosId(id:number): Observable<any> {
-      return this.http.get(this.consultarId+id);
+
+    getProductosId(): Observable<any> {
+      return this.http.get(this.cid);
     } 
     
 

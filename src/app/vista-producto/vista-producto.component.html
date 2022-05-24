@@ -2,22 +2,22 @@
 <div class="container">
     <div class="contenido">
         <div class="sec-izq">
-            <img src="https://images.unsplash.com/photo-1605619227865-f8af18dfeab4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=881&q=80" class="card-img-top" alt="...">
+            <img src="https://scontent.fjal3-1.fna.fbcdn.net/v/t39.30808-6/237116255_169718545251196_3438560399951417157_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=kgAyOHcx_dkAX9lnZHH&_nc_ht=scontent.fjal3-1.fna&oh=00_AT8b-LckXegHHZYHa4-YpLwoA4gErGK7Da6vdyo1NM9ENA&oe=628C3965" class="card-img-top" alt="...">
             <div class="botones">
-               <button class="btn-1 hbtn"><a href="http://localhost:4200/nota" class="hbtn">Comprar</a></button>
-               <button class="btn-2 hbtn">Añadir al Carrito</button>
+               <button class="btn-1 hbtn"><a  href="http://localhost:4200/nota/{{producto.id}}" class="hbtn">Comprar</a></button>
+               <button class="btn-2 hbtn" (click)="agregar()">Añadir al Carrito</button>
 
             </div>
         </div>
         <div class="sec-der">
             <div class="ecabezado">
-                <h1>Nombre de Producto</h1>
-                <h2 style="color: #754845;">$000,000</h2>
+                <h1>{{producto.nombre}}</h1>
+                <h2 style="color: #754845;">${{producto.precio}}</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ad id ut aspernatur beatae magni, deserunt magnam quia architecto libero. Corporis perspiciatis fuga vitae alias magnam totam sed ullam animi.</p>
+            <p>{{producto.descripcion}}.</p>
             <div class="disponibles">
                 <p>Disponibilidad:</p>
-                <p style="font-weight: bolder;">#</p>
+                <p style="font-weight: bolder;">#{{producto.almacen}}</p>
             </div>
         </div>
     </div>

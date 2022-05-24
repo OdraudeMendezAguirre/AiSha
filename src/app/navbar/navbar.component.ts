@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  nombreUser="";
+  
   constructor() { }
 
   ngOnInit(): void {
   }
+  nombreUser="";
   setUserName(nombre:string){
     this.nombreUser=nombre;
   }

@@ -6,15 +6,16 @@
 </section>
 
 <div class="container">
-    <app-product-item></app-product-item>
-    <app-product-item></app-product-item>
-    <app-product-item></app-product-item>
-    <app-product-item></app-product-item>
-    <app-product-item></app-product-item>
-    <app-product-item></app-product-item>
-    <app-product-item></app-product-item>
-    <app-product-item></app-product-item>
-    <app-product-item></app-product-item>
+    <div *ngFor="let producto of lista; let i = index" class="card">
+        <a href="http://localhost:4200/productoId/{{producto.id}}">
+            <img src="https://wallpapercave.com/wp/wp4468334.jpg" class="card-img-top" alt="...">
+            <div class="card-body" >
+                <h5 class="card-title">{{producto.nombre}}</h5>
+                <p class="card-text">Cantidad Disponible: {{producto.almacen}}</p>
+                <p class="card-text precio">Precio: ${{producto.precio}}</p>
+            </div>
+        </a> 
+    </div>
 </div>
 
 
