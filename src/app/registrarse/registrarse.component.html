@@ -6,20 +6,21 @@
 
         <div class="entrada">
             <label>Correo</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="email" class="form-control" name="correo" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="correo">
         </div>
         
         <div class="entrada">
             <label>Contraseña</label>
-            <input type="password" class="form-control" id="inputPassword">
+            <input type="password" class="form-control" name="contrasena" id="inputPassword" [(ngModel)]="contrasena">
         </div>
         
         <div class="botones">
-            <button class="btn boton1">Registrarme</button>
+            <button class="btn boton1" (click)="registro()">Registrarme</button>
             <div class="botones2">
-                <button class="btn boton2">Inicio</button>
-                <button class="btn boton3">Iniciar Sesion</button>
+                <a class="btn boton2" href="http://localhost:4200">Inicio</a>
+                <a class="btn boton3" href="http://localhost:4200/iniciar-sesion">Iniciar Sesion</a>
             </div>
+            <p>{{mensaje}}</p>
         </div>
 
     </section>  

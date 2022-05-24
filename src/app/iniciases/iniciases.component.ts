@@ -13,18 +13,13 @@ export class IniciasesComponent implements OnInit {
 
   contrasena="";
   correo="";
-  path="";
   mensaje=""
 
   iniciar(){
     if(this.contrasena=="aisha"){
-      let index: IndexComponent = new IndexComponent();
       this.mensaje="Aisha Admin"
-      index.guardarUsuarioIndex(this.mensaje);
-      this.path="localhost:4200/index";
       return ("Inicio sesion correctamente");
     }else{
-      this.path="localhost:4200/iniciar-sesion"
       return("Datos erroneos");
     }
   }

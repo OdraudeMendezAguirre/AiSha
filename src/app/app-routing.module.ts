@@ -3,11 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CarritoComponent } from './carrito/carrito.component';
 import { IndexComponent } from './index/index.component';
 import { IniciasesComponent } from './iniciases/iniciases.component';
-import { ProductItemComponent } from './product-item/product-item.component';
-import { ProductoComponent } from './producto/producto.component';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
-import { TicketComponent } from './ticket/ticket.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { VistaProductoComponent } from './vista-producto/vista-producto.component';
 import { NotaComponent } from './nota/nota.component';
 const routes: Routes = [
@@ -24,34 +20,17 @@ const routes: Routes = [
   component: RegistrarseComponent
 },
 {
-  path: 'ticket',
-  component: TicketComponent
-},
-{
-  path: 'registrarse',
-  component: RegistrarseComponent
-},
-{
-  path: 'producto/:id',
-  component: ProductoComponent
+  path: 'productoId/:id',
+  component: VistaProductoComponent
 },
 {
   path: 'carrito',
   component: CarritoComponent
 },
 {
-  path: 'producto',
-  component: ProductItemComponent
-},
-{
-  path: 'vistaProducto',
-  component: VistaProductoComponent
-},
-{
-  path: 'nota',
+  path: 'nota/:id',
   component: NotaComponent
-},
-{path:'navbar', component:NavbarComponent}
+}
 ];
 
 @NgModule({

@@ -18,6 +18,36 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.card{
+    margin: 2rem;
+    width: 20rem;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.034);
+}
 
+img{
+    height: 18rem;
+}
+
+
+h5{
+    color: #754845;
+}
+
+.precio{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #191919;
+}
+
+
+/** */
+
+.card:hover{
+    transform: scale(1.05);
+    
+}
 
 

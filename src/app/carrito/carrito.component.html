@@ -1,16 +1,29 @@
 <app-navbar></app-navbar>
 <div class="container">
     <h1>Tu Carrito</h1>
-    <app-carrito-item></app-carrito-item>
-    <app-carrito-item></app-carrito-item>
-    <app-carrito-item></app-carrito-item>
-    <app-carrito-item></app-carrito-item>
-    <app-carrito-item></app-carrito-item>
+    <div class="producto" *ngFor="let item of lista; let i = index">
+        <div class="img">
+            <img src="https://images.unsplash.com/photo-1605619227865-f8af18dfeab4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=881&q=80" alt="...">
+        </div>
+        <div class="info">
+            <div class="datos">
+                <p class="title-info">Producto</p>
+                <p>{{item.nombre}}</p>
+            </div>
+            <div class="datos">
+                <p class="title-info">Precio Unitario</p>
+                <p>${{item.precio}}</p>
+            </div>
+            <div class="botones">
+                <button class="btn2" (click)="eliminar(item.id)">Eliminar Producto</button>
+            </div>
+        </div>
+    </div>
     <hr>
     <div class="total">
         <h2>Precio Total</h2>
-        <p>$000,000</p>
+        <p>${{pt}}</p>
     </div>
-    <button class="btn-1 hbtn"><a href="http://localhost:4200/ticket" class="hbtn">Confirmar Compra</a></button>
+    <button class="btn-1 hbtn" (click)="vaciar()"><a href="" class="hbtn">Confirmar Compra</a></button>
 </div>
 <app-footer></app-footer>
